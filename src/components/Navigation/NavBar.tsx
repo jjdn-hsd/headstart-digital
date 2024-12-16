@@ -21,12 +21,12 @@ const NavBar: React.FC = () => {
       isScrolled ? 'bg-neutral-50 shadow-lg' : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex justify-between items-center h-16">
+        <div className="flex justify-between items-center h-24"> {/* Increased height from h-16 to h-24 */}
           <div className="flex-shrink-0">
             <img 
               src="/logo.svg" 
               alt="HeadStart Digital Logo" 
-              className="h-8 w-auto"
+              className="h-16 w-auto" /* Increased height from h-8 to h-16 */
             />
           </div>
 
@@ -40,8 +40,8 @@ const NavBar: React.FC = () => {
                 duration={500}
                 className={`${
                   item.isCTA
-                    ? 'bg-brand-primary text-neutral-50 px-4 py-2 rounded-md hover:bg-brand-dark transition-colors duration-200'
-                    : `${isScrolled ? 'text-neutral-700' : 'text-neutral-50'} hover:text-brand-light`
+                    ? 'bg-brand-primary text-neutral-50 px-6 py-3 rounded-full hover:bg-brand-dark transition-colors duration-200' /* Adjusted padding */
+                    : `${isScrolled ? 'text-neutral-00' : 'text-neutral-50'} hover:text-brand-light`
                 } cursor-pointer transition-colors duration-200`}
               >
                 {item.label}
@@ -53,15 +53,15 @@ const NavBar: React.FC = () => {
           <div className="md:hidden">
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className={`${isScrolled ? 'text-neutral-700' : 'text-neutral-50'} hover:text-brand-light`}
+              className={`${isScrolled ? 'text-neutral-700' : 'text-neutral-50'} hover:text-brand-light p-2`} /* Added padding */
             >
               <span className="sr-only">Open main menu</span>
               {!isMobileMenuOpen ? (
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"> {/* Increased size */}
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
                 </svg>
               ) : (
-                <svg className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <svg className="h-8 w-8" fill="none" viewBox="0 0 24 24" stroke="currentColor"> {/* Increased size */}
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
                 </svg>
               )}
