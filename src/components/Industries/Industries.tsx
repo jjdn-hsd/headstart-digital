@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import IndustryCarousel from './IndustryCarousel';
 import { industries } from './constants';
-import { container, fadeIn } from '@/utils/animations';
+import { fadeIn } from '@/utils/animations';
 
 const Industries: React.FC = () => {
   return (

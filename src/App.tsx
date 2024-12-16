@@ -11,7 +11,7 @@ import Industries from './components/Industries/Industries';
 import About from './components/About/About';
 import Contact from './components/Contact/Contact';
 
-function App() {
+const App: React.FC = () => {
   return (
     <HelmetProvider>
       <div className="min-h-screen">

@@ -13,7 +13,6 @@ const IndustryCarousel: React.FC<IndustryCarouselProps> = ({ industries }) => {
   const totalSlides = industries.length;
   const {
     currentSlide,
-    isPaused,
     setIsPaused,
     nextSlide,
     previousSlide,

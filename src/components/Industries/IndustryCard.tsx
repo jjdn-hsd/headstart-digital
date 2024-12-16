@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { IndustryCardProps } from './types';
 import { item } from '@/utils/animations';
 
-const IndustryCard: React.FC<IndustryCardProps> = ({ industry, index }) => {
+const IndustryCard: React.FC<IndustryCardProps> = ({ industry }) => {
   return (
     <motion.div
       variants={item}
@@ -11,7 +11,7 @@ const IndustryCard: React.FC<IndustryCardProps> = ({ industry, index }) => {
     >
       <div className="relative h-48">
         <img
-          src={industry.image}
+          src={industry.icon}
           alt={industry.name}
           className="w-full h-full object-cover"
         />
@@ -22,7 +22,7 @@ const IndustryCard: React.FC<IndustryCardProps> = ({ industry, index }) => {
       </div>
       <div className="p-6">
         <ul className="space-y-2">
-          {industry.expertise.map((item, i) => (
+          {industry.services.map((item, i) => (
             <li key={i} className="flex items-center text-neutral-700">
               <svg
                 className="w-4 h-4 mr-2 text-brand-primary"

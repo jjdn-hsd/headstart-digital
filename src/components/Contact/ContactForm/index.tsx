@@ -96,3 +96,5 @@ const ContactForm: React.FC = () => {
     </motion.form>
   );
 };
+
+export default ContactForm;
