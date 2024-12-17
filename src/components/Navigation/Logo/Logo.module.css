@@ -1,0 +1,7 @@
+.logoLight {
+  @apply brightness-0 invert; /* Makes the logo white */
+}
+
+.logoDark {
+  @apply brightness-100; /* Keeps original logo colors */
+}

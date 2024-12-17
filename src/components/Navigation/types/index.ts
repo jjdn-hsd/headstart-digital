@@ -10,3 +10,12 @@ export interface MobileMenuProps {
   onClose: () => void;
   navItems: NavItemProps[];
 }
+
+export interface CTAButtonProps {
+  to: string;
+  isScrolled: boolean;
+}
+
+export interface LogoProps {
+  className?: string;
+}

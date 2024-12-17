@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="300" height="60" viewBox="0 0 300 60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+<svg width="200" height="100" viewBox="0 0 200 100" version="1.1" xmlns="http://www.w3.org/2000/svg">
   <style>
-    .logo-text { font-family: 'Arial', sans-serif; font-weight: 700; }
+    .logo-text { font-family: 'Arial', sans-serif; font-weight: 700; text-anchor: middle; }
     .light-theme { fill: #1A237E; }
     .dark-theme { fill: #64B5F6; display: none; }
     .accent-light { fill: #3F51B5; }
@@ -11,7 +11,7 @@
   </style>
   
   <!-- Logo Symbol -->
-  <g transform="translate(10, 15)">
+  <g transform="translate(85, 20)">
     <!-- Arrow shape representing "HeadStart" -->
     <path class="accent-light" d="M0,15 L15,0 L30,15 L25,15 L15,5 L5,15 Z"/>
     <path class="accent-dark" d="M0,15 L15,0 L30,15 L25,15 L15,5 L5,15 Z"/>
@@ -27,14 +27,14 @@
   </g>
   
   <!-- Company Name -->
-  <g transform="translate(50, 35)">
+  <g transform="translate(100, 70)">
     <text class="logo-text light-theme" font-size="24">
       <tspan x="0" y="0">HeadStart</tspan>
-      <tspan x="120" y="0">Digital</tspan>
+      <tspan x="0" y="28">Digital</tspan>
     </text>
     <text class="logo-text dark-theme" font-size="24">
       <tspan x="0" y="0">HeadStart</tspan>
-      <tspan x="120" y="0">Digital</tspan>
+      <tspan x="0" y="28">Digital</tspan>
     </text>
   </g>
 </svg>

@@ -1,0 +1,35 @@
+.navbar {
+  @apply fixed w-full z-50 transition-all duration-300;
+}
+
+.navbarScrolled {
+  @apply bg-neutral-50 shadow-lg;
+}
+
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+.navItem {
+  @apply font-medium transition-colors duration-200;
+}
+
+.navItemScrolled {
+  @apply text-neutral-900 hover:text-brand-primary;
+}
+
+.navItemTransparent {
+  @apply text-neutral-50 hover:text-brand-light;
+}
+
+.mobileMenuButton {
+  @apply p-2 rounded-md transition-colors duration-200;
+}
+
+.mobileMenuButtonScrolled {
+  @apply text-neutral-900 hover:text-brand-primary;
+}
+
+.mobileMenuButtonTransparent {
+  @apply text-neutral-50 hover:text-brand-light;
+}

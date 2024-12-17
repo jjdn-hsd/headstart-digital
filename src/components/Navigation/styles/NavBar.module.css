@@ -1,0 +1,116 @@
+/* Base navbar styles */
+.navbar {
+  @apply fixed w-full z-50 transition-all duration-300;
+}
+
+.navbar-scrolled {
+  @apply bg-neutral-50 shadow-lg;
+}
+
+.navbar-transparent {
+  @apply bg-transparent;
+}
+
+/* Container styles */
+.container {
+  @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+}
+
+/* Navigation items */
+.nav-item {
+  @apply transition-all duration-300 ease-in-out;
+}
+
+.nav-item-scrolled {
+  @apply text-neutral-900 hover:text-brand-primary;
+}
+
+.nav-item-transparent {
+  @apply text-neutral-50 hover:text-brand-light;
+}
+
+/* CTA button */
+.cta-button {
+  @apply px-6 py-3 rounded-full font-semibold shadow-md
+    transition-all duration-300 ease-in-out relative overflow-hidden;
+  transform: translateY(0);
+}
+
+.cta-button-scrolled {
+  @apply bg-brand-primary text-neutral-50;
+}
+
+.cta-button-scrolled:hover {
+  @apply shadow-lg;
+  background: linear-gradient(
+    to right,
+    theme('colors.brand.primary'),
+    theme('colors.brand.dark')
+  );
+  transform: translateY(-2px);
+}
+
+.cta-button-transparent {
+  @apply bg-neutral-50 text-brand-primary;
+}
+
+.cta-button-transparent:hover {
+  @apply bg-brand-primary text-neutral-50 shadow-lg;
+  transform: translateY(-2px);
+}
+
+/* Shine effect for CTA buttons */
+.cta-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transform: skewX(-25deg);
+  transition: 0.75s;
+}
+
+.cta-button:hover::before {
+  left: 125%;
+}
+
+/* Mobile menu styles remain unchanged */
+.mobile-menu-button {
+  @apply p-2 transition-colors duration-200;
+}
+
+.mobile-menu-button-scrolled {
+  @apply text-neutral-900 hover:text-brand-primary;
+}
+
+.mobile-menu-button-transparent {
+  @apply text-neutral-50 hover:text-brand-light;
+}
+
+.mobile-menu {
+  @apply fixed inset-x-0 bg-neutral-50 shadow-lg;
+}
+
+.mobile-menu-item {
+  @apply block px-4 py-3 rounded-md text-base font-medium transition-all duration-300;
+}
+
+.mobile-menu-item-default {
+  @apply text-neutral-700 hover:text-brand-primary;
+}
+
+.mobile-menu-item-cta {
+  @apply bg-brand-primary text-neutral-50;
+}
+
+.mobile-menu-item-cta:hover {
+  @apply bg-brand-dark shadow-lg;
+  transform: translateY(-2px);
+}

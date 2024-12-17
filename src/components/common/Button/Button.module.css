@@ -1,0 +1,115 @@
+/* Base button styles */
+.button {
+  @apply inline-flex items-center justify-center
+    font-medium relative overflow-hidden
+    focus:outline-none focus:ring-2 focus:ring-offset-2
+    transition-all duration-300 ease-in-out;
+  border-radius: 25px;
+  transform: translateY(0);
+}
+
+/* Size variants */
+.small {
+  @apply px-4 py-2 text-sm;
+}
+
+.medium {
+  @apply px-6 py-3 text-base;
+}
+
+.large {
+  @apply px-8 py-4 text-lg;
+}
+
+/* Style variants with consistent hover effects */
+.primary {
+  @apply bg-brand-primary text-neutral-50 shadow-md
+    focus:ring-brand-primary;
+}
+
+.primary:hover {
+  @apply shadow-lg;
+  background: linear-gradient(
+    to right,
+    theme('colors.brand.primary'),
+    theme('colors.brand.dark')
+  );
+  transform: translateY(-2px);
+}
+
+.secondary {
+  @apply bg-neutral-50 text-brand-primary shadow-md
+    focus:ring-brand-primary;
+}
+
+.secondary:hover {
+  @apply bg-brand-primary text-neutral-50 shadow-lg;
+  transform: translateY(-2px);
+}
+
+.outline {
+  @apply bg-transparent text-neutral-50 border-2 border-neutral-50
+    focus:ring-neutral-50 shadow-md;
+}
+
+.outline:hover {
+  @apply bg-neutral-50 text-brand-primary shadow-lg;
+  transform: translateY(-2px);
+}
+
+/* Active states */
+.button:active {
+  transform: translateY(0);
+  transition-duration: 0.15s;
+}
+
+/* Shine effect for all button variants */
+.button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    to right,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transform: skewX(-25deg);
+  transition: 0.75s;
+}
+
+.button:hover::before {
+  left: 125%;
+}
+
+/* Other states */
+.fullWidth {
+  @apply w-full;
+}
+
+.disabled {
+  @apply opacity-50 cursor-not-allowed;
+  transform: none !important;
+}
+
+.loading {
+  @apply relative text-transparent;
+}
+
+.loading::after {
+  @apply absolute inset-0 flex items-center justify-center text-current;
+  content: "Loading...";
+}
+
+.spinner {
+  @apply animate-spin h-5 w-5 mr-2;
+}
+
+/* Accessibility */
+.button:focus-visible {
+  @apply ring-2 ring-offset-2;
+  outline: 2px solid transparent;
+}

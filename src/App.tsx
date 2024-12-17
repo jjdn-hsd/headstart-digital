@@ -1,6 +1,6 @@
 import React from 'react';
 import { HelmetProvider } from 'react-helmet-async';
-import NavBar from './components/Navigation/NavBar';
+import { NavBar } from './components/Navigation';
 import ScrollProgress from './components/Navigation/ScrollProgress';
 import ScrollToTop from './components/Navigation/ScrollToTop';
 import MetaTags from './components/SEO/MetaTags';

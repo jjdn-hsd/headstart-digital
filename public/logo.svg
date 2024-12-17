@@ -1,46 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<svg width="600" height="200" viewBox="0 0 600 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-  <!-- Orbital Path -->
-  <path d="M50 100C50 50 150 20 250 50" stroke="#00A3FF" stroke-width="4" stroke-linecap="round" fill="none" opacity="0.3"/>
+<svg width="300" height="60" viewBox="0 0 300 60" version="1.1" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .logo-text { font-family: 'Arial', sans-serif; font-weight: 700; }
+    .light-theme { fill: #1A237E; }
+    .dark-theme { fill: #64B5F6; display: none; }
+    .accent-light { fill: #3F51B5; }
+    .accent-dark { fill: #BBDEFB; display: none; }
+    svg:hover .accent-light { fill: #303F9F; }
+    svg:hover .accent-dark { fill: #90CAF9; }
+  </style>
   
-  <!-- Rocket Body -->
-  <g transform="translate(200, 60) rotate(45)">
-    <!-- Main Rocket Shape -->
-    <path d="M0 0L80 80L40 120L0 80L0 0Z" fill="#FF6B21"/>
-    <path d="M0 0L-40 40L0 80L0 0Z" fill="#FF8C42"/>
+  <!-- Logo Symbol -->
+  <g transform="translate(10, 15)">
+    <!-- Arrow shape representing "HeadStart" -->
+    <path class="accent-light" d="M0,15 L15,0 L30,15 L25,15 L15,5 L5,15 Z"/>
+    <path class="accent-dark" d="M0,15 L15,0 L30,15 L25,15 L15,5 L5,15 Z"/>
     
-    <!-- Flame Accent -->
-    <path d="M40 120L20 140L0 120L40 120Z" fill="#FF1E1E"/>
+    <!-- Digital dots representing technology -->
+    <circle class="light-theme" cx="5" cy="25" r="2"/>
+    <circle class="light-theme" cx="15" cy="25" r="2"/>
+    <circle class="light-theme" cx="25" cy="25" r="2"/>
     
-    <!-- Window/Cockpit -->
-    <circle cx="30" cy="30" r="15" fill="#FFFFFF"/>
-    <circle cx="30" cy="30" r="12" fill="#00A3FF"/>
+    <circle class="dark-theme" cx="5" cy="25" r="2"/>
+    <circle class="dark-theme" cx="15" cy="25" r="2"/>
+    <circle class="dark-theme" cx="25" cy="25" r="2"/>
   </g>
-
+  
   <!-- Company Name -->
-  <g transform="translate(320, 100)">
-    <!-- HeadStart -->
-    <text x="0" y="0" font-family="Arial, sans-serif" font-size="48" font-weight="700" fill="#1A1A1A">
-      HeadStart
+  <g transform="translate(50, 35)">
+    <text class="logo-text light-theme" font-size="24">
+      <tspan x="0" y="0">HeadStart</tspan>
+      <tspan x="120" y="0">Digital</tspan>
     </text>
-    <!-- Digital -->
-    <text x="0" y="50" font-family="Arial, sans-serif" font-size="42" font-weight="600" fill="#404040">
-      Digital
+    <text class="logo-text dark-theme" font-size="24">
+      <tspan x="0" y="0">HeadStart</tspan>
+      <tspan x="120" y="0">Digital</tspan>
     </text>
   </g>
-
-  <!-- Decorative Elements -->
-  <g stroke="#00A3FF" stroke-width="2" opacity="0.2">
-    <line x1="320" y1="160" x2="580" y2="160"/>
-    <line x1="320" y1="163" x2="580" y2="163"/>
-  </g>
-
-  <!-- Ensure SVG is scalable -->
-  <defs>
-    <style>
-      @media (max-width: 300px) {
-        text { transform: scale(0.8); }
-      }
-    </style>
-  </defs>
 </svg>
