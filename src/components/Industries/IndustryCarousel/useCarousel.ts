@@ -1,6 +1,6 @@
 import { useState, useEffect, useCallback, useRef } from 'react';
 
-export const useCarousel = (totalSlides: number, autoRotateInterval = 2000) => {
+export const useCarousel = (totalSlides: number, autoRotateInterval = 5000) => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const [isPaused, setIsPaused] = useState(false);
   const touchStartX = useRef(0);
