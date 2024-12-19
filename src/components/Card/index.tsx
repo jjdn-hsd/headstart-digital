@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { CardProps } from './types';
+import { CardProps } from '@/types';
 import { transitions } from '@/utils/transitions';
 
 const Card: React.FC<CardProps> = ({

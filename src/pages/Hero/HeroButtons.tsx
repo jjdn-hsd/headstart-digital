@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-scroll';
 import { motion } from 'framer-motion';
-import Button from '../common/Button/Button';
+import Button from '../../components/Button/Button';
 import { fadeIn } from '@/utils/animations';
 
 const HeroButtons: React.FC = () => {

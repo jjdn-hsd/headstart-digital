@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { SectionHeaderProps } from './types';
+import { SectionHeaderProps } from '@/types';
 import { fadeIn } from '@/utils/animations';
 import { defaultViewport } from '@/utils/viewport';
 
