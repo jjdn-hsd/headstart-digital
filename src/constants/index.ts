@@ -12,6 +12,28 @@ export const teamMembers: TeamMember[] = [
       twitter: 'https://twitter.com/sarahjohnson'
     }
   },
+  {
+    id: '2',
+    name: 'John Smith',
+    position: 'Co-Founder',
+    bio: 'Co-Founder of HeadStart Digital, with a focus on business development and client relationships.',
+    image: '/images/team/john.webp',
+    social: {
+      linkedin: 'https://linkedin.com/in/john-smith',
+      twitter: 'https://twitter.com/johnsmith'
+    }
+  },
+  {
+    id: '3',
+    name: 'Martha Jones',
+    position: 'Digital Marketing Manager',
+    bio: 'Digital marketing expert with a focus on SEO and content strategy.',
+    image: '/images/team/martha.webp',
+    social: {
+      linkedin: 'https://linkedin.com/in/martha-jones',
+      twitter: 'https://twitter.com/marthajones'
+    }
+  },
   // Add more team members
 ];
 

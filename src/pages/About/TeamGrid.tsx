@@ -15,11 +15,16 @@ const TeamGrid: React.FC<TeamGridProps> = ({ members }) => {
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true }}
-      className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
+      className="relative"
     >
-      {members.map(member => (
-        <TeamMember key={member.id} member={member} />
-      ))}
+      {/* Decorative background elements */}
+      <div className="absolute inset-0 pointer-events-none" />
+      
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12 relative">
+        {members.map(member => (
+          <TeamMember key={member.id} member={member} />
+        ))}
+      </div>
     </motion.div>
   );
 };

@@ -16,7 +16,7 @@ const Timeline: React.FC<TimelineProps> = ({ milestones }) => {
       viewport={{ once: true }}
       className="max-w-3xl mx-auto mb-16"
     >
-      <h3 className="text-2xl font-bold text-center text-neutral-900 mb-8">Our Journey</h3>
+      <h3 className="text-2xl font-bold text-center text-neutral-50 mb-8">Our Journey</h3>
       <div className="relative">
         {milestones.map((milestone, index) => (
           <motion.div
@@ -25,16 +25,16 @@ const Timeline: React.FC<TimelineProps> = ({ milestones }) => {
             className="flex gap-4 mb-8"
           >
             <div className="flex flex-col items-center">
-              <div className="w-4 h-4 rounded-full bg-brand-primary"></div>
+              <div className="w-4 h-4 rounded-full bg-brand-light"></div>
               {index !== milestones.length - 1 && (
-                <div className="w-0.5 h-full bg-brand-primary opacity-20"></div>
+                <div className="w-0.5 h-full bg-brand-light opacity-20"></div>
               )}
             </div>
             <div className="flex-1">
-              <div className="bg-neutral-50 p-4 rounded-lg shadow-lg">
+              <div className="bg-white/80 p-4 rounded-lg shadow-lg border border-neutral-700">
                 <span className="text-brand-primary font-bold">{milestone.year}</span>
                 <h4 className="text-lg font-semibold text-neutral-900 mb-2">{milestone.title}</h4>
-                <p className="text-neutral-700">{milestone.description}</p>
+                <p className="text-neutral-400">{milestone.description}</p>
               </div>
             </div>
           </motion.div>
