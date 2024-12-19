@@ -6,7 +6,7 @@ import { fadeIn } from '@/utils/animations';
 
 const Industries: React.FC = () => {
   return (
-    <section id="industries" className="py-20 bg-neutral-900">
+    <section id="industries" className="py-28 bg-neutral-900">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <motion.div
           variants={fadeIn}

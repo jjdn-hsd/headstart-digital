@@ -25,7 +25,7 @@ const Section: React.FC<SectionProps> = ({
   }[containerWidth];
 
   return (
-    <section id={id} className={`py-20 ${bgClasses} ${className}`}>
+    <section id={id} className={`py-28 ${bgClasses} ${className}`}>
       <div className={`mx-auto px-4 sm:px-6 lg:px-8 ${containerClasses}`}>
         {children}
       </div>

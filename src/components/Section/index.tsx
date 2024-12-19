@@ -16,7 +16,7 @@ const Section: React.FC<SectionProps> = ({
   }[background];
 
   return (
-    <section id={id} className={`py-20 ${bgClasses} ${className}`}>
+    <section id={id} className={`py-28 ${bgClasses} ${className}`}>
       <Container maxWidth={containerWidth}>
         {children}
       </Container>
