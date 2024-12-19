@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Milestone } from './types';
+import { Milestone } from '@/types';
 import { container, item } from '@/utils/animations';
 
 interface TimelineProps {

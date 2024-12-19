@@ -1,5 +1,5 @@
 import { useState, FormEvent } from 'react';
-import { ContactFormData, ValidationErrors } from './types';
+import { ContactFormData, ValidationErrors } from '@/types';
 
 export const useContactForm = () => {
   const [formData, setFormData] = useState<ContactFormData>({

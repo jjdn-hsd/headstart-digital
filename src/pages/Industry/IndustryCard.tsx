@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Industry } from '../types';
+import { Industry } from '@/types';
 
 interface IndustryCardProps {
   industry: Industry;

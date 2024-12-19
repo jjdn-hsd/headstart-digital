@@ -1,3 +1,27 @@
+// Navigation page
+export interface NavItemProps {
+  id: string;
+  label: string;
+  href: string;
+  isCTA?: boolean;
+}
+
+export interface MobileMenuProps {
+  isOpen: boolean;
+  onClose: () => void;
+  navItems: NavItemProps[];
+}
+
+export interface CTAButtonProps {
+  to: string;
+  isScrolled: boolean;
+}
+
+export interface LogoProps {
+  className?: string;
+}
+
+// Services page
 export interface NavItem {
   id: string;
   label: string;
@@ -18,11 +42,6 @@ export interface WorkCard {
   category: string;
 }
 
-export interface Industry {
-  name: string;
-  description: string;
-  icon: string;
-}
 // About page
 export interface TeamMember {
   id: string;
@@ -88,4 +107,70 @@ export interface SectionHeaderProps {
   className?: string;
   titleColor?: string;
   descriptionColor?: string;
+}
+
+// Industry page
+export interface Industry {
+  id: string;
+  name: string;
+  description: string;
+  icon: string;
+  services: string[];
+}
+
+export interface IndustryCardProps {
+  industry: Industry;
+  index: number;
+}
+
+// Contact page
+export interface ContactFormData {
+  fullName: string;
+  email: string;
+  companyName: string;
+  phone: string;
+  website: string;
+  message: string;
+}
+
+export interface ValidationErrors {
+  [key: string]: string;
+}
+
+// Services page
+export interface ServiceCardProps {
+  icon: string;
+  title: string;
+  description: string;
+  href: string;
+}
+
+export interface ServicesProps {
+  services: ServiceCardProps[];
+}
+
+// Works page
+export interface Project {
+  id: string;
+  title: string;
+  client: string;
+  industry: string;
+  description: string;
+  image: string;
+  category: 'all' | 'web-design' | 'mobile-apps' | 'branding' | 'e-commerce';
+  technologies: string[];
+  completionYear: number;
+  results?: {
+    metric: string;
+    value: string;
+  }[];
+}
+
+export interface ProjectCardProps {
+  project: Project;
+}
+
+export interface ProjectGridProps {
+  projects: Project[];
+  selectedCategory: string;
 }

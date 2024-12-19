@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import { container, item } from '@/utils/animations';
 import ServiceCard from './ServiceCard';
-import { ServiceCardProps } from './types';
+import { ServiceCardProps } from '@/types';
 
 interface ServiceGridProps {
   services: ServiceCardProps[];

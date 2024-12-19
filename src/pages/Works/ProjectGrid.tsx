@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ProjectGridProps } from './types';
+import { ProjectGridProps } from '@/types';
 import ProjectCard from './ProjectCard';
 import { container } from '@/utils/animations';
 

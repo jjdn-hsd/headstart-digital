@@ -1,9 +1,9 @@
 import React from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import IndustryCard from './IndustryCard';
-import CarouselControls from './CarouselControls';
-import { useCarousel } from './useCarousel';
-import { Industry } from '../types';
+import CarouselControls from './IndustryCarouselControls';
+import { useCarousel } from '../../hooks/useCarousel';
+import { Industry } from '@/types';
 
 interface IndustryCarouselProps {
   industries: Industry[];

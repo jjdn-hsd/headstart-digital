@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ServiceCardProps } from './types';
+import { ServiceCardProps } from '@/types';
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ icon, title, description, href }) => {
   return (

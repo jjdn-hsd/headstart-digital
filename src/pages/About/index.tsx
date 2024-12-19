@@ -2,7 +2,7 @@ import React from 'react';
 import AboutHeader from './AboutHeader';
 import Timeline from './Timeline';
 import TeamGrid from './TeamGrid';
-import { teamMembers, milestones } from '@/constants/constants';
+import { teamMembers, milestones } from '@/constants';
 
 const About: React.FC = () => {
   return (

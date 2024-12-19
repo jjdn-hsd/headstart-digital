@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { TeamMember as TeamMemberType } from './types';
+import { TeamMember as TeamMemberType } from '@/types';
 import TeamMember from './TeamMember';
 import { container } from '@/utils/animations';
 

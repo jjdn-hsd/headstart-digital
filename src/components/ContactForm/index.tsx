@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { useContactForm } from './useContactForm';
+import { useContactForm } from '../../hooks/useContactForm';
 import FormField from './FormField';
 import { fadeIn } from '@/utils/animations';
 

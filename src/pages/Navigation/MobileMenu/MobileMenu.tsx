@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MobileMenuProps } from '../types';
+import { MobileMenuProps } from '@/types';
 import CloseButton from './CloseButton';
 import styles from './MobileMenu.module.css';
 

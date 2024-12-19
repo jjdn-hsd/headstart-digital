@@ -1,15 +1,15 @@
 import React from 'react';
 import { HelmetProvider } from 'react-helmet-async';
 import { NavBar } from './pages/Navigation';
-import ScrollProgress from './pages/Navigation/ScrollProgress';
-import ScrollToTop from './pages/Navigation/ScrollToTop';
+import ScrollProgress from './pages/Scroll/ScrollProgress';
+import ScrollToTop from './pages/Scroll/ScrollToTop';
 import MetaTags from './components/SEO/MetaTags';
-import Hero from './pages/Hero/Hero';
-import Services from './pages/Services/Services';
-import Works from './pages/Works/Works';
-import Industries from './pages/Industries/Industries';
-import About from './pages/About/About';
-import Contact from './pages/Contact/Contact';
+import Hero from './pages/Hero';
+import Services from './pages/Services';
+import Works from './pages/Works';
+import Industry from './pages/Industry';
+import About from './pages/About';
+import Contact from './pages/Contact';
 
 const App: React.FC = () => {
   return (
@@ -21,8 +21,8 @@ const App: React.FC = () => {
         <main>
           <Hero />
           <Services />
+          <Industry />
           <Works />
-          <Industries />
           <About />
           <Contact />
         </main>

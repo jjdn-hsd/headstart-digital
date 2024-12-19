@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
-import { projects, categories } from './constants';
+import { projects, categories } from '@/constants';
 import CategoryFilter from './CategoryFilter';
 import ProjectGrid from './ProjectGrid';
 import { fadeIn } from '@/utils/animations';

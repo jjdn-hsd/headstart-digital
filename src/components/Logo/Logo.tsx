@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLogoColor } from './useLogoColor';
+import { useLogoColor } from '../../hooks/useLogoColor';
 import styles from './Logo.module.css';
 
 const Logo: React.FC = () => {

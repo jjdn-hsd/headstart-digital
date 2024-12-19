@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
-import { NAV_ITEMS } from '../constants';
-import Logo from '../Logo/Logo';
+import { NAV_ITEMS } from '@/constants';
+import Logo from '@/components/Logo/Logo';
 import MobileMenu from '../MobileMenu/MobileMenu';
-import CTAButton from '../CTAButton/CTAButton';
+import CTAButton from '../../../components/CTAButton/CTAButton';
 import styles from './NavBar.module.css';
 
 const NavBar: React.FC = () => {

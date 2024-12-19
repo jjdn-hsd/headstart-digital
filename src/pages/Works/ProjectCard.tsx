@@ -1,6 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { ProjectCardProps } from './types';
+import { ProjectCardProps } from '@/types';
 import { item } from '@/utils/animations';
 
 const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
